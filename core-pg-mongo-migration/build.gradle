@@ -3,7 +3,7 @@ version '1.0-SNAPSHOT'
 
 buildscript {
     ext.kotlin_version = '1.0.6'
-    ext.spring_boot_version = '1.4.1.RELEASE'
+    ext.spring_boot_version = '1.5.1.RELEASE'
 
     repositories {
         mavenCentral()
@@ -24,8 +24,8 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.springframework.boot:spring-boot-starter-data-jpa"
+    compile "org.springframework.boot:spring-boot-starter-data-mongodb"
     compile "org.springframework.boot:spring-boot-starter-logging"
 
-    compile 'org.hibernate:hibernate-core:5.2.3.Final'
     compile 'org.postgresql:postgresql:9.4.1211'
 }

@@ -7,6 +7,6 @@ val Tag.path: String
         if (this.parent == null) {
             return "/"
         } else {
-            return "${parent!!.path}/$id"
+            return "${parent!!.path}${parent!!.id}/"
         }
     }

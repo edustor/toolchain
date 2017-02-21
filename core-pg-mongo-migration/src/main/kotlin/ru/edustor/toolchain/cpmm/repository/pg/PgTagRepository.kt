@@ -7,5 +7,5 @@ import ru.edustor.toolchain.cpmm.model.pg.Tag
 
 @Repository
 interface PgTagRepository : JpaRepository<Tag, String> {
-    fun findByOwner(user: Account): List<Tag>
+    fun findByOwner(account: Account): List<Tag>
 }

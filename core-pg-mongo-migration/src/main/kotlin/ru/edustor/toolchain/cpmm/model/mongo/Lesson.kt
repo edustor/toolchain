@@ -9,6 +9,7 @@ import java.util.*
 @Document
 class Lesson {
     var id: String = UUID.randomUUID().toString()
+    lateinit var ownerId: String
     lateinit var tagId: String
     lateinit var date: LocalDate
     var topic: String? = null

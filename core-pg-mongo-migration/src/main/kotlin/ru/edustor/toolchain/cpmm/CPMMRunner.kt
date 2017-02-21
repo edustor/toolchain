@@ -55,6 +55,7 @@ open class CPMMRunner(val pgAccountRepository: PgAccountRepository,
             logger.info("Migrating lesson: ${pgLesson.id}")
             val mongoLesson = Lesson()
             mongoLesson.id = pgLesson.id
+            mongoLesson.ownerId = pgLesson.owner.id
             mongoLesson.date = pgLesson.date
             mongoLesson.removedOn = pgLesson.removedOn
             mongoLesson.tagId = pgLesson.tag.id

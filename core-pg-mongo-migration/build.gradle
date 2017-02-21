@@ -27,6 +27,7 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-data-mongodb"
     compile "org.springframework.boot:spring-boot-starter-logging"
 
+    compile 'org.hibernate:hibernate-core:5.2.3.Final'
     compile 'org.postgresql:postgresql:9.4.1211'
 
     testCompile "org.springframework.boot:spring-boot-starter-test"
